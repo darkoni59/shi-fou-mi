@@ -1,0 +1,37 @@
+body{
+    background-color: green;
+
+
+}
+
+
+
+
+
+header{
+    text-align: center;
+    border: solid black;
+    background-color:gray ;
+    color: white;
+
+
+}
+#paper{
+    image-orientation: flip;
+    border: solid black;
+    background-color: gray;
+
+}
+#cissors{
+    border: solid black;
+    background-color: white;
+}
+#rock{
+    border: solid black;
+    background-color: gray;
+}
+button{
+    border: solid black;
+    border-radius: 50%;
+
+}
