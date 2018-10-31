@@ -1,5 +1,5 @@
 var choixutilisateur=0;
-var win=0+1;
+var gagne=0;
 
 
 document.getElementById("paper").addEventListener("click", function() {
@@ -12,6 +12,7 @@ document.getElementById("paper").addEventListener("click", function() {
     }
     if (choixordi == 2) {
         alert("gg il a fait pierre");
+        gagne();
     }
     if (choixordi == 3) {
         alert("perdu il fait cissors");
@@ -29,9 +30,9 @@ document.getElementById("rock").addEventListener("click", function() {
     }
     if (choixordi == 2) {
         alert("gg il fait cissors");
-        function win() {
+         gagne();
 
-        }
+
     }
     if (choixordi == 3) {
         alert("perdu il fait paper");
@@ -46,7 +47,7 @@ document.getElementById("cissors").addEventListener("click", function() {
     if (choixordi == 1) {
 
         alert("gg il fait paper");
-        function win(){}
+        gagne();
     }
     if (choixordi == 2) {
         alert("égalité il fait cissors");
@@ -56,9 +57,9 @@ document.getElementById("cissors").addEventListener("click", function() {
 
     }
 });
-function win() {
-    gagne++;
-    document.getElementById(win).innerHTML="nombre de victoire"+win++
+function gagne() {
+    win++;
+    document.getElementById('win').innerHTML="nombre de victoire:tu as gagner"+""+gagne+""+'fois';
 
 }
 
